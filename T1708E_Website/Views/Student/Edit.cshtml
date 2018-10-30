@@ -1,0 +1,18 @@
+﻿@model T1708E_Website.Models.Student
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Student Edit</h2>
+
+<form action="Update" method="post">
+    <input type="hidden" name="id" value="@Model.Id" />
+    <div>UserName : <input name="Name" value="@Model.Name" /></div>
+    <div>RollNumber : <input name="RollNumber" value="@Model.RollNumber" /></div>
+    <div>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+
+    </div>
+</form>
